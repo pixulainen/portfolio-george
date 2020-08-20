@@ -74,8 +74,8 @@ const Index = () => {
 							<Col md="6" className="hero-welcome-wrapper">
 								<div className="hero-welcome-text">
 									<h1>
-										Welcome to the portfolio website of Filip Jerga. Get informed, collaborate and
-										discover projects I was working on through the years!
+										Welcome to the portfolio website of George Apetrei. Get informed, collaborate
+										and discover projects I was working on through the years!
 									</h1>
 								</div>
 								<Typed
