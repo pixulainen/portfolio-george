@@ -1,6 +1,5 @@
 import BaseLayout from '@/components/layouts/BaseLayout';
 import BasePage from '@/components/BasePage';
-import Link from 'next/link';
 import { useGetUser } from '@/actions/user';
 import PortfolioApi from '@/lib/api/portfolios';
 import { isAuthorized } from '@/utils/auth0';
@@ -70,7 +69,7 @@ export async function getStaticProps() {
 	const portfolios = json.data;
 	return {
 		props: { portfolios },
-		revalidate: 60
+		revalidate: 1
 	};
 }
 export default Portfolios;
