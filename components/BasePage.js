@@ -16,7 +16,7 @@ const BasePage = props => {
     className = '',
     header,
     title = "Portfolio - Filip Jerga",
-    metaDescription="My name is Filip Jerga and I am an experienced software engineer and freelance developer. Throughout my career, I have acquired advanced technical knowledge and the ability to explain programming topics clearly and in detail to a broad audience.",
+    metaDescription="My name is George Apetrei and I am an experienced software engineer. Full stack developer with a true passion for making user focused applications.",
     canonicalPath,
     children } = props;
 
