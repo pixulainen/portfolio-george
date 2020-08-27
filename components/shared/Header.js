@@ -71,8 +71,8 @@ const Header = ({ user, loading, className }) => {
 
 	return (
 		<ReactResizeDetector handleWidth>
-      {({width}) =>
-        <Navbar
+      {({ width }) =>
+        <Navbar 
         className={`port-navbar port-default absolute ${className} ${width < 768 && isOpen ? 'is-open' : 'is-close'}`}
         dark
         expand="md">

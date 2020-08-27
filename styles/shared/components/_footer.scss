@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?m9zbse');
+    src:  url('../fonts/icomoon.eot?m9zbse#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?m9zbse') format('truetype'),
+      url('../fonts/icomoon.woff?m9zbse') format('woff'),
+      url('../fonts/icomoon.svg?m9zbse#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.ga-container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.ga-align-center {
+	align-items: center;
+}
+footer {
+	padding: 10px 0 !important;
+    background-color: #444;
+}
+
+footer .ga-logo {
+	width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+
+footer .ga-social-icons {
+	display: flex;
+    list-style-type: none;
+    margin:initial;
+}
+
+footer .ga-social-icons li {
+	margin-left: 15px;
+}
+
+footer .ga-social-icons li a {
+    font-size: 25px;
+	color: #fff;
+    display: flex;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+footer .ga-social-icons li a:hover {
+	opacity: .7;
+}
+.ga-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 26px;
+    border: solid 2px #fff;
+    border-radius: 100%;
+}
+a {
+	text-decoration: none !important;
+}
+.icon-linkedin-with-circle:before {
+    content: "\e900";
+  }
+  .icon-mail4:before {
+    content: "\ea86";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
+  .icon-linkedin:before {
+    content: "\eac9";
+  }

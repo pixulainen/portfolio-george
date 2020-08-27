@@ -5,43 +5,19 @@ import Typed from 'react-typed';
 import { useGetUser } from '@/actions/user';
 import BasePage from 'components/BasePage';
 
-const ROLES = [ 'Developer', 'Tech', 'Software Engineer', 'React.js' ];
+const ROLES = [ 'Full Stack Developer', 'Tech-Entusiast', 'Software Engineer', 'React.js' ];
 const Index = () => {
 	const { data, loading } = useGetUser();
 
-	const [ isFlipping, setIsFlipping ] = useState(false);
-
-	const flipInterval = useRef();
-
-	useEffect(() => {
-		startAnimation();
-		return () => flipInterval.current && clearInterval(flipInterval.current);
-	}, []);
-
-	const startAnimation = () => {
-		flipInterval.current = setInterval(() => {
-			setIsFlipping((prevFlipping) => !prevFlipping);
-		}, 3000);
-	};
-
 	return (
-		<BaseLayout
-			user={data}
-			loading={loading}
-			className={`cover ${isFlipping ? 'cover-orange' : 'cover-blue'}`}
-			navClass="transparent"
-		>
+		<BaseLayout user={data} loading={loading} className={`cover `} navClass="transparent">
 			<BasePage indexPage title="George Apetrei">
 				<div className="main-section">
-					<div className="background-image">
-						<img src="/images/background-index.png" />
-					</div>
-
-					<Container>
+					<Container fluid>
 						<Row>
 							<Col md="6">
 								<div className="hero-section">
-									<div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
+									<div className="">
 										<div className="front">
 											<div className="image image-1">
 												<div className="hero-section-content">
@@ -55,33 +31,17 @@ const Index = () => {
 												<div className="shadow-inner"> </div>
 											</div>
 										</div>
-										<div className="back">
-											<div className="image image-2">
-												<div className="hero-section-content">
-													<h2>React and Next is Amazing!</h2>
-													<div className="hero-section-content-intro">
-														Software developer ready for a project of any type!
-													</div>
-												</div>
-											</div>
-											<div className="shadow-custom shadow-custom-orange">
-												<div className="shadow-inner"> </div>
-											</div>
-										</div>
 									</div>
 								</div>
 							</Col>
 							<Col md="6" className="hero-welcome-wrapper">
 								<div className="hero-welcome-text">
-									<h1>
-										Welcome to the portfolio website of George Apetrei. Get informed, collaborate
-										and discover projects I was working on through the years!
-									</h1>
+									<h1>Welcome to the portfolio website of George Apetrei. Pleased to e-meet you!</h1>
 								</div>
 								<Typed
 									loop
-									typeSpeed={70}
-									backSpeed={70}
+									typeSpeed={60}
+									backSpeed={60}
 									strings={ROLES}
 									backDelay={1000}
 									loopCount={0}
